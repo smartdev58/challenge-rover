@@ -9,9 +9,6 @@ class RoverCalculator
   @current_position_y = 0
 
   def self.move(square, position_head, command)
-    @current_position_x = square[:x].to_i
-    @current_position_y = square[:y].to_i
-
     position_letters = position_head.split(' ')
     @current_position_x = position_letters[0].to_i
     @current_position_y = position_letters[1].to_i
